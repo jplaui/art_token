@@ -18,7 +18,10 @@ hackathon project
 
 # IPFS interaction
 - install deamon
-- 
+
+
+# Web 3 wallet interaction
+
 
 # Backend code
 
