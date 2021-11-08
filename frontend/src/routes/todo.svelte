@@ -15,30 +15,36 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>ART Token</title>
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1>Todos</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		User management: creators need a login to upload their collection to IPFS
 	</p>
 
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
+	<pre>open</pre>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		User management: login and logout for creators
 	</p>
 
+	<pre>open</pre>
+
 	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
+		User management: users click start to activate the smart contract and their minting protocol
 	</p>
+
+	<pre>open</pre>
+
+	<p>
+		User management: We do user registration upon request, they will be able to login, we need login button on starting page 
+	</p>
+
+	<pre>open</pre>
+
 </div>
 
 <style>

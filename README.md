@@ -1,4 +1,4 @@
-# art_token
+# Project: art_token
 hackathon project
 
 # frontend build:
@@ -14,5 +14,11 @@ hackathon project
 
 ## adding responsive css framework
 - using w3.css with following template: https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm#
+- w3.css in `frontend/static` folder, then imported in `frontend/src/app.html`
+
+# IPFS interaction
+- install deamon
 - 
+
+# Backend code
 

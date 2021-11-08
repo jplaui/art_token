@@ -1,13 +1,15 @@
 <script>
-	// import Header from '$lib/header/Header.svelte';
+	import Links from '$lib/header/Links.svelte';
 	// import '../app.css';
 </script>
-
-<!-- <Header /> -->
 
 <main>
 	<slot />
 </main>
+
+<div class="w3-container">
+	<Links />
+</div>
 
 <!-- <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
