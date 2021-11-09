@@ -1,5 +1,7 @@
 # Project: art_token
-hackathon project
+wintermute hackathon project
+
+- 
 
 # frontend build:
 - in project root folder (cd into art_token): `npm init svelte@next frontend`

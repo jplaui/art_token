@@ -4,6 +4,12 @@
 
 <script>
 	// import Counter from '$lib/Counter.svelte';
+	import { onMount } from 'svelte';
+
+	onMount(async () => {
+		console.log("hello from js")
+	});
+
 </script>
 
 <svelte:head>
@@ -62,7 +68,7 @@
 	  </header>
 
 	  <!-- Collections Section -->
-	  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+	  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="collections">
 	    <h2 class="w3-text-light-grey">Collections</h2>
 	    <hr style="width:200px" class="w3-opacity">
 	    <p>Jump over to our collections page and see all active minting protocols where you can participate and take your chance in winning a NFT. Connect your wallet, participate in the random selection protocol to win a NFT and increase your winning chances by staking a specific collection.
@@ -85,7 +91,7 @@
 	    <h3 class="w3-padding-16 w3-text-light-grey">Start Minting</h3>
 
 	    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-	      <i class="fa fa-download"></i> Browse Collections
+	      <i class="fa fa-globe"></i> Browse Collections
 	    </button>
 
 	  <!-- End Collections Section -->
@@ -139,7 +145,7 @@
 	    </div>
 
 	    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-	      <i class="fa fa-download"></i> Register Here
+	      <i class="fa fa-sign-in"></i> Register Here
 	    </button>
 
 	  <!-- End Creators Section -->
@@ -241,7 +247,7 @@
 	      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
 	      <p>
 	        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-	          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+	          <i class="fa fa-paper-plane"></i> Send Message
 	        </button>
 	      </p>
 	    </form>
