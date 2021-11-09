@@ -6,7 +6,7 @@
 	<slot />
 </main>
 
-<div class="w3-container">
+<!-- <div class="w3-container">
 	<Links />
-</div>
+</div> -->
 

@@ -1,14 +1,19 @@
 <script context="module">
-	export const prerender = true;
+	export const prerender = false;
 </script>
 
 <script>
 	// import Counter from '$lib/Counter.svelte';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	onMount(async () => {
 		console.log("hello from js")
 	});
+
+	function browseCollections() {
+		goto("/collections")
+	}
 
 </script>
 
@@ -17,44 +22,44 @@
 </svelte:head>
 
 	<!-- Icon Bar (Sidebar - hidden on small screens) -->
-	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-hover-opacity-off">
 	  <!-- Avatar image in top left corner -->
 	  <!-- <img src="/w3images/avatar_smoke.jpg" style="width:100%"> -->
-	  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+	  <a href="/" class="w3-bar-item">
 	    <i class="fa fa-home w3-xxlarge"></i>
-	    <p>HOME</p>
+	    <!-- <p>HOME</p> -->
 	  </a>
-	  <a href="#collections" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#collections" class="w3-bar-item">
 	    <i class="fa fa-eye w3-xxlarge"></i>
-	    <p>COLLECTIONS</p>
+	    <!-- <p>COLLECTIONS</p> -->
 	  </a>
-	  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#creators" class="w3-bar-item">
 	    <i class="fa fa-magic w3-xxlarge"></i>
-	    <p>CREATORS</p>
+	    <!-- <p>CREATORS</p> -->
 	  </a>
-	  <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#team" class="w3-bar-item">
 	    <i class="fa fa-users w3-xxlarge"></i>
-	    <p>TEAM</p>
+	    <!-- <p>TEAM</p> -->
 	  </a>
-	  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#about" class="w3-bar-item">
 	    <i class="fa fa-question-circle w3-xxlarge"></i>
-	    <p>ABOUT</p>
+	    <!-- <p>ABOUT</p> -->
 	  </a>
-	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#contact" class="w3-bar-item">
 	    <i class="fa fa-envelope w3-xxlarge"></i>
-	    <p>CONTACT</p>
+	    <!-- <p>CONTACT</p> -->
 	  </a>
 	</nav>
 
 	<!-- Navbar on small screens (Hidden on medium and large screens) -->
 	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
 	  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-	    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-	    <a href="#collections" class="w3-bar-item w3-button" style="width:25% !important">COLLECTIONS</a>
-	    <a href="#creators" class="w3-bar-item w3-button" style="width:25% !important">CREATORS</a>
-	    <a href="#team" class="w3-bar-item w3-button" style="width:25% !important">TEAM</a>
-	    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-	    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+	    <a href="/" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-home w3-xxlarge"></i></a>
+	    <a href="#collections" class="w3-bar-item w3-button" style="width:16.66% !important"><i class="fa fa-eye w3-xxlarge"></i></a>
+	    <a href="#creators" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-magic w3-xxlarge"></i></a>
+	    <a href="#team" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-users w3-xxlarge"></i></a>
+	    <a href="#about" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-question-circle w3-xxlarge"></i></a>
+	    <a href="#contact" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-envelope w3-xxlarge"></i></a>
 	  </div>
 	</div>
 
@@ -64,7 +69,7 @@
 	  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
 	    <h1 class="w3-jumbo"><span class="w3-hide-small">Demo:</span> ART Token</h1>
 	    <p>AMM supported minting.</p>
-	    <img src="/trump.jpg" alt="boy" class="w3-image" width="300" height="500">
+	    <!-- <img src="/trump.jpg" alt="boy" class="w3-image" width="300" height="500"> -->
 	  </header>
 
 	  <!-- Collections Section -->
@@ -88,9 +93,9 @@
 	      </div>
 	    </div>
 
-	    <h3 class="w3-padding-16 w3-text-light-grey">Start Minting</h3>
+	    <!-- <h3 class="w3-padding-16 w3-text-light-grey">Start Minting</h3> -->
 
-	    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+	    <button class="w3-button w3-light-grey w3-padding-large w3-section" on:click={browseCollections}>
 	      <i class="fa fa-globe"></i> Browse Collections
 	    </button>
 
@@ -273,7 +278,7 @@
 	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	.w3-row-padding img {margin-bottom: 12px}
 	/* Set the width of the sidebar to 120px */
-	.w3-sidebar {width: 120px;background: #222;}
+	.w3-sidebar {width: 120px;background: transparent;display: flex;flex-direction: column;justify-content: center}
 	/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 	#main {margin-left: 120px}
 	/* Remove margins from "page content" on small screens */
