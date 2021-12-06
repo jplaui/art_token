@@ -16,6 +16,10 @@
 	onMount(async () => {
 		console.log("page index:", index);
 	})
+
+	function enterAuction(i) {
+		console.log("auction:", i)
+	}
 </script>
 
 <svelte:head>
@@ -57,8 +61,8 @@
 			<button><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">Connect Wallet</a></button>
 			<br>
 			<br>
-			<button class="w3-button w3-black" on:click={() => enterAuction(i)}>Place Bid <i class="fa fa-shopping-cart"></i></button>
-			<button class="w3-button w3-black" on:click={() => enterAuction(i)}>Staking <i class="fa fa-shopping-cart"></i></button>
+			<button class="w3-button w3-black" on:click={() => enterAuction(index)}>Place Bid <i class="fa fa-shopping-cart"></i></button>
+			<button class="w3-button w3-black" on:click={() => enterAuction(index)}>Staking <i class="fa fa-shopping-cart"></i></button>
 		</div>
 
 	  <!-- End Collections Section -->

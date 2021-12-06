@@ -80,16 +80,16 @@
 	    </p>
 	    <div class="w3-row-padding" style="margin:0 -16px">
 	      <div class="w3-half">
-	        <img src="/blocks.jpg" style="width:100%">
-	        <img src="/vr.jpg" style="width:100%">
-	        <img src="/world.jpg" style="width:100%">
+	        <img alt="sample image1" src="/blocks.jpg" style="width:100%">
+	        <img alt="sample image2" src="/vr.jpg" style="width:100%">
+	        <img alt="sample image3" src="/world.jpg" style="width:100%">
 	      </div>
 
 	      <div class="w3-half">
-	        <img src="/art1.jpg" style="width:100%">
-	        <img src="/pixel.jpg" style="width:100%">
+	        <img alt="sample image4" src="/art1.jpg" style="width:100%">
+	        <img alt="sample image5" src="/pixel.jpg" style="width:100%">
 	        <!-- <img src="/btc.jpg" style="width:100%"> -->
-	        <img src="/art2.jpg" style="width:100%">
+	        <img alt="sample image6" src="/art2.jpg" style="width:100%">
 	      </div>
 	    </div>
 
@@ -275,7 +275,7 @@
 	</div>
 
 <style>
-	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+	h1,h2,h3 {font-family: "Montserrat", sans-serif}
 	.w3-row-padding img {margin-bottom: 12px}
 	/* Set the width of the sidebar to 120px */
 	.w3-sidebar {width: 120px;background: transparent;display: flex;flex-direction: column;justify-content: center}

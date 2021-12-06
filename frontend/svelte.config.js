@@ -9,5 +9,12 @@ export default {
 			assets: 'build',
 			fallback: null
 		})
-	}
+	},
+	onwarn: (warning, handler) => {
+        const { code, frame } = warning;
+        if (code === "css-unused-selector")
+            return;
+
+        handler(warning);
+    },
 };
