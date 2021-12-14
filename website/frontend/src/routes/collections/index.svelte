@@ -56,7 +56,7 @@
 		    <div class="w3-col l3 s6">
 		      <div class="w3-container">
 		      	<div class="w3-display-container">
-		          <img alt="collection_{i}" src="{image_id}" style="width:100%">
+		          <img alt="collectionItem" src="{image_id}" style="width:100%">
 		          {#if days_exist <= 5}
 		          	<span class="w3-tag w3-display-topleft">New</span>
 		          {/if}

@@ -23,43 +23,48 @@
 
 	<!-- Icon Bar (Sidebar - hidden on small screens) -->
 	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-hover-opacity-off">
-	  <!-- Avatar image in top left corner -->
-	  <!-- <img src="/w3images/avatar_smoke.jpg" style="width:100%"> -->
-	  <a href="/" class="w3-bar-item">
-	    <i class="fa fa-home w3-xxlarge"></i>
-	    <!-- <p>HOME</p> -->
-	  </a>
-	  <a href="#collections" class="w3-bar-item">
-	    <i class="fa fa-eye w3-xxlarge"></i>
-	    <!-- <p>COLLECTIONS</p> -->
-	  </a>
-	  <a href="#creators" class="w3-bar-item">
-	    <i class="fa fa-magic w3-xxlarge"></i>
-	    <!-- <p>CREATORS</p> -->
-	  </a>
-	  <a href="#team" class="w3-bar-item">
-	    <i class="fa fa-users w3-xxlarge"></i>
-	    <!-- <p>TEAM</p> -->
-	  </a>
-	  <a href="#about" class="w3-bar-item">
-	    <i class="fa fa-question-circle w3-xxlarge"></i>
-	    <!-- <p>ABOUT</p> -->
-	  </a>
-	  <a href="#contact" class="w3-bar-item">
-	    <i class="fa fa-envelope w3-xxlarge"></i>
-	    <!-- <p>CONTACT</p> -->
-	  </a>
+		<!-- Avatar image in top left corner -->
+		<!-- <img src="/w3images/avatar_smoke.jpg" style="width:100%"> -->
+		<a href="/" class="w3-bar-item">
+			<i class="fa fa-home w3-xxlarge"></i>
+			<!-- <p>HOME</p> -->
+		</a>
+		<a href="#collections" class="w3-bar-item">
+			<i class="fa fa-eye w3-xxlarge"></i>
+			<!-- <p>COLLECTIONS</p> -->
+		</a>
+		<a href="#creators" class="w3-bar-item">
+			<i class="fa fa-magic w3-xxlarge"></i>
+			<!-- <p>CREATORS</p> -->
+		</a>
+		<a href="#team" class="w3-bar-item">
+			<i class="fa fa-users w3-xxlarge"></i>
+			<!-- <p>TEAM</p> -->
+		</a>
+		<a href="#about" class="w3-bar-item">
+			<i class="fa fa-question-circle w3-xxlarge"></i>
+			<!-- <p>ABOUT</p> -->
+		</a>
+		<a href="#contact" class="w3-bar-item">
+			<i class="fa fa-envelope w3-xxlarge"></i>
+			<!-- <p>CONTACT</p> -->
+		</a>
+		<a href="#login" class="w3-bar-item">
+			<i class="fa fa-sign-in w3-xxlarge"></i>
+			<!-- <p>CONTACT</p> -->
+		</a>
 	</nav>
 
 	<!-- Navbar on small screens (Hidden on medium and large screens) -->
 	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
 	  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-	    <a href="/" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-home w3-xxlarge"></i></a>
-	    <a href="#collections" class="w3-bar-item w3-button" style="width:16.66% !important"><i class="fa fa-eye w3-xxlarge"></i></a>
-	    <a href="#creators" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-magic w3-xxlarge"></i></a>
-	    <a href="#team" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-users w3-xxlarge"></i></a>
-	    <a href="#about" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-question-circle w3-xxlarge"></i></a>
-	    <a href="#contact" class="w3-bar-item w3-button" style="width:16.6% !important"><i class="fa fa-envelope w3-xxlarge"></i></a>
+	    <a href="/" class="w3-bar-item w3-button" style="width:14.28% !important"><i class="fa fa-home w3-xxlarge"></i></a>
+	    <a href="#collections" class="w3-bar-item w3-button" style="width:14.28% !important"><i class="fa fa-eye w3-xxlarge"></i></a>
+	    <a href="#creators" class="w3-bar-item w3-button" style="width:14.28% !important"><i class="fa fa-magic w3-xxlarge"></i></a>
+	    <a href="#team" class="w3-bar-item w3-button" style="width:14.28% !important"><i class="fa fa-users w3-xxlarge"></i></a>
+	    <a href="#about" class="w3-bar-item w3-button" style="width:14.28% !important"><i class="fa fa-question-circle w3-xxlarge"></i></a>
+	    <a href="#contact" class="w3-bar-item w3-button" style="width:14.28% !important"><i class="fa fa-envelope w3-xxlarge"></i></a>
+	    <a href="#login" class="w3-bar-item w3-button" style="width:14.28% !important"><i class="fa fa-sign-in w3-xxlarge"></i></a>
 	  </div>
 	</div>
 
@@ -80,16 +85,16 @@
 	    </p>
 	    <div class="w3-row-padding" style="margin:0 -16px">
 	      <div class="w3-half">
-	        <img alt="sample image1" src="/blocks.jpg" style="width:100%">
-	        <img alt="sample image2" src="/vr.jpg" style="width:100%">
-	        <img alt="sample image3" src="/world.jpg" style="width:100%">
+	        <img alt="blocks" src="/blocks.jpg" style="width:100%">
+	        <img alt="vr" src="/vr.jpg" style="width:100%">
+	        <img alt="world" src="/world.jpg" style="width:100%">
 	      </div>
 
 	      <div class="w3-half">
-	        <img alt="sample image4" src="/art1.jpg" style="width:100%">
-	        <img alt="sample image5" src="/pixel.jpg" style="width:100%">
+	        <img alt="art1" src="/art1.jpg" style="width:100%">
+	        <img alt="pixel" src="/pixel.jpg" style="width:100%">
 	        <!-- <img src="/btc.jpg" style="width:100%"> -->
-	        <img alt="sample image6" src="/art2.jpg" style="width:100%">
+	        <img alt="art2" src="/art2.jpg" style="width:100%">
 	      </div>
 	    </div>
 
@@ -150,7 +155,7 @@
 	    </div>
 
 	    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-	      <i class="fa fa-sign-in"></i> Register Here
+	      <i class="fa fa-address-book"></i> Register Here
 	    </button>
 
 	  <!-- End Creators Section -->
@@ -164,23 +169,23 @@
 
 	    <!-- Testimonials -->
 	    <!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>   -->
-	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/donald-duck/donald24.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/donald-duck/donald24.gif" alt="Avatar1" class="w3-left w3-circle w3-margin-right" style="width:80px">
 	    <p><span class="w3-large w3-margin-right">Kaihua Qin.</span> Imperial College London.</p>
 	    <p>DeFi Mastermind.</p><br>
 	    
-	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/donald-duck/dis19.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/donald-duck/dis19.gif" alt="Avatar2" class="w3-left w3-circle w3-margin-right" style="width:80px">
 	    <p><span class="w3-large w3-margin-right">Liyi Zhou.</span> Imperial College London.</p>
 	    <p>DeFi Genius.</p><br>
 
-	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/tick-trick-und-track/kkk23.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/tick-trick-und-track/kkk23.gif" alt="Avatar3" class="w3-left w3-circle w3-margin-right" style="width:80px">
 	    <p><span class="w3-large w3-margin-right">Jens Ernstberger.</span> Technical University Munich.</p>
 	    <p>Managing Director.</p><br>
 
-	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/donald-duck/dis20.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/donald-duck/dis20.gif" alt="Avatar4" class="w3-left w3-circle w3-margin-right" style="width:80px">
 	    <p><span class="w3-large w3-margin-right">Jan Lauinger.</span> Technical University Munich.</p>
 	    <p>Full Stack.</p><br>
 
-	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/dagobert-duck/dagobert02.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+	    <img src="https://www.animaatjes.de/disney-bilder/disney-bilder/dagobert-duck/dagobert02.gif" alt="Avatar5" class="w3-left w3-circle w3-margin-right" style="width:80px">
 	    <p><span class="w3-large w3-margin-right">Arthur Gervais.</span> Imperial College London.</p>
 	    <p>Angel Whale.</p><br>
 
@@ -206,7 +211,7 @@
 	    <div class="w3-white">
 	      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
 	    </div><br>
-	    
+
 	    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
 	      <div class="w3-quarter w3-section">
 	        <span class="w3-xlarge">11+</span><br>
@@ -258,24 +263,24 @@
 	    </form>
 	  <!-- End Contact Section -->
 	  </div>
-	  
-	    <!-- Footer -->
-	  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-	    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-	    <i class="fa fa-instagram w3-hover-opacity"></i>
-	    <i class="fa fa-snapchat w3-hover-opacity"></i>
-	    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-	    <i class="fa fa-twitter w3-hover-opacity"></i>
-	    <i class="fa fa-linkedin w3-hover-opacity"></i>
-	    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-	  <!-- End footer -->
-	  </footer>
 
-	<!-- END PAGE CONTENT -->
-	</div>
+	<!-- Footer -->
+	<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+		<i class="fa fa-facebook-official w3-hover-opacity"></i>
+		<i class="fa fa-instagram w3-hover-opacity"></i>
+		<i class="fa fa-snapchat w3-hover-opacity"></i>
+		<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+		<i class="fa fa-twitter w3-hover-opacity"></i>
+		<i class="fa fa-linkedin w3-hover-opacity"></i>
+		<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+	<!-- End footer -->
+	</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
 
 <style>
-	h1,h2,h3 {font-family: "Montserrat", sans-serif}
+	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 	.w3-row-padding img {margin-bottom: 12px}
 	/* Set the width of the sidebar to 120px */
 	.w3-sidebar {width: 120px;background: transparent;display: flex;flex-direction: column;justify-content: center}

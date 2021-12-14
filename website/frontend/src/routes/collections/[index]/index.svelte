@@ -17,9 +17,10 @@
 		console.log("page index:", index);
 	})
 
-	function enterAuction(i) {
-		console.log("auction:", i)
+	function enterAuction(index) {
+		console.log("test...")
 	}
+
 </script>
 
 <svelte:head>
@@ -28,10 +29,10 @@
 
 <!-- Page Content -->
 	<div class="w3-padding-large" id="main">
-	  <!-- Header/Home -->
-	  <header class="w3-container w3-padding-32 w3-center w3-black">
-	    <h1 class="w3-jumbo"><span class="w3-hide-small">Demo:</span> ART Token</h1>
-	    <p>NFT Auction.</p>
+	<!-- Header/Home -->
+	<header class="w3-container w3-padding-32 w3-center w3-black">
+		<h1 class="w3-jumbo"><span class="w3-hide-small">Demo:</span> ART Token</h1>
+		<p>NFT Auction.</p>
 	  </header>
 
 	  <!-- Collections Section -->
@@ -40,10 +41,10 @@
 		</div>
 
 	  <div class="w3-content w3-justify w3-text-grey w3-padding-64">
-	    <h2 class="w3-text-light-grey">Collection Name</h2>
-	    <hr style="width:200px" class="w3-opacity">
-	    <p>NFT number: {nft_index}
-	    </p>
+		<h2 class="w3-text-light-grey">Collection Name</h2>
+		<hr style="width:200px" class="w3-opacity">
+		<p>NFT number: {nft_index}
+		</p>
 
 	    <div class="w3-display-container w3-container">
 			<img src="/art1.jpg" alt="Jeans" style="width:100%">
@@ -61,12 +62,12 @@
 			<button><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">Connect Wallet</a></button>
 			<br>
 			<br>
-			<button class="w3-button w3-black" on:click={() => enterAuction(index)}>Place Bid <i class="fa fa-shopping-cart"></i></button>
-			<button class="w3-button w3-black" on:click={() => enterAuction(index)}>Staking <i class="fa fa-shopping-cart"></i></button>
+			<button class="w3-button w3-black" on:click={() => enterAuction(1)}>Place Bid <i class="fa fa-shopping-cart"></i></button>
+			<button class="w3-button w3-black" on:click={() => enterAuction(2)}>Staking <i class="fa fa-shopping-cart"></i></button>
 		</div>
 
-	  <!-- End Collections Section -->
-	  </div>
+	<!-- End Collections Section -->
+	</div>
 	</div>
 
 <style>
