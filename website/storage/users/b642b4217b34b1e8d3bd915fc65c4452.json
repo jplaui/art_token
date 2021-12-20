@@ -1,0 +1,14 @@
+{
+	"email": "test@test.com",
+	"pwhash": "bycrypt...",
+	"collections": [
+		{
+			"name": "pixel_punks",
+			"size": 10000
+		},
+		{
+			"name": "polleijns",
+			"size": 5000
+		}
+	]
+}

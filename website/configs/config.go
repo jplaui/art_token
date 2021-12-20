@@ -1,4 +1,4 @@
-package main
+package configs
 
 import "os"
 
@@ -11,6 +11,8 @@ type Config struct {
 	HttpsAddr         string
 	HttpsPort         string
 	HttpSessionSecret string
+	UsersPath         string
+	CollectionsPath   string
 }
 
 var (
@@ -59,6 +61,16 @@ func init() {
 		HttpSessionSecret = "41ed725e56ee7fcc43da77f14d6e0ed3c2e570378e73af98241dbf84ea8fb882"
 	}
 
+	UsersPath := os.Getenv("USERS_PATH")
+	if UsersPath == "" {
+		UsersPath = "./storage/users/"
+	}
+
+	CollectionsPath := os.Getenv("HTTP_SESSION_SECRET")
+	if CollectionsPath == "" {
+		CollectionsPath = "./storage/collections/"
+	}
+
 	config = &Config{
 		StaticAssetsDir:   StaticAssetsDir,
 		TlsCertPath:       TlsCertPath,
@@ -68,6 +80,8 @@ func init() {
 		HttpsAddr:         HttpsAddr,
 		HttpsPort:         HttpsPort,
 		HttpSessionSecret: HttpSessionSecret,
+		UsersPath:         UsersPath,
+		CollectionsPath:   CollectionsPath,
 	}
 }
 

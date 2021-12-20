@@ -1,13 +1,20 @@
 package main
 
 import (
+	"context"
 	"net/http"
 	"os"
 	"website/configs"
 	"website/redirect"
+	"website/session"
 	"website/spa"
+	"website/storage"
 
 	"github.com/fvbock/endless"
+	"github.com/go-kit/kit/log"
+	"github.com/go-kit/log/level"
+	"github.com/gorilla/mux"
+	"github.com/gorilla/securecookie"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -22,11 +29,6 @@ func main() {
 
 	// configs read in
 	config = configs.GetConfig()
-
-	// encrypted session cookie
-	sEncryptCookie := securecookie.GenerateRandomKey(32)
-	var blockKey = []byte(sEncryptCookie)
-	secretSession = securecookie.New([]byte(config.HttpSessionSecret), blockKey)
 
 	// logger
 	logger = log.NewLogfmtLogger(os.Stderr)
@@ -57,13 +59,43 @@ func main() {
 
 	})
 
+	// context for storage handlers
+	ctx1 := context.Background()
+	ctx1, cancel := context.WithCancel(ctx1)
+	defer cancel()
+
+	// context for session handlers
+	ctx2 := context.Background()
+	ctx2, cancel2 := context.WithCancel(ctx2)
+	defer cancel2()
+
+	// encrypted session cookie
+	sEncryptCookie := securecookie.GenerateRandomKey(32)
+	var blockKey = []byte(sEncryptCookie)
+	secretSession = securecookie.New([]byte(config.HttpSessionSecret), blockKey)
+
+	// session service
+	var svc2 session.Service
+	{
+		storageConfig := storage.UserStoreConfig{UsersPath: config.UsersPath}
+		userStore := storage.NewUserStore(storageConfig, log.With(logger, "client", "storage"))
+		sessionStore := session.NewSessionStore()
+		svc2 = session.NewService(userStore, sessionStore, secretSession, log.With(logger, "service", "session"))
+	}
+
+	// // storage service
+	// var svc1 storage.Service
+	// {
+
+	// }
+
 	// HTTPS handler
 	mux2 := mux.NewRouter()
 
 	// attach services
-	session.AttachRoutes(mux2, secretSession, ctx2, svc2, log.With(logger, "service", "session"))
-	storage.AttachRoutes(mux2, ctx1, svc1, log.With(logger, "service", "storage"))
-	spa.AttachRoutes(mux2, config.StaticAssetsDir, log.With(logger, "service", "spa"))
+	session.AttachRoutes(mux2, secretSession, ctx2, svc2, log.With(logger, "transport", "session"))
+	// storage.AttachRoutes(mux2, ctx1, svc1, log.With(logger, "transport", "storage"))
+	spa.AttachRoutes(mux2, config.StaticAssetsDir, log.With(logger, "transport", "spa"))
 
 	// configure server
 	httpsAddr := config.HttpsAddr + ":" + config.HttpsPort
